@@ -1,0 +1,140 @@
+\input{settings}
+
+
+% Header Elements
+\newcommand{\name}{Stephanie Klumpe}
+\newcommand{\phone}{(719) 323-8691}
+\newcommand{\email}{dallask9944@gmail.com}
+\newcommand{\school}{University of Colorado at Colorado Springs}
+\newcommand{\degree}{Master's of Science}
+\newcommand{\field}{Applied Mathematics}
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+
+\parbox{2.35cm}{
+\includegraphics[width=2.35cm,clip]{autape.png}}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+
+  \textbf{\Large \name}\\
+  \href{mailto:\email}{{\faEnvelope}\ {\email}} & {{\faPhone}\ \phone}\\
+  \degree & \href{https://github.com/StephAStark}{{\faGithub}\ {GitHub Profile}}\\
+  \field & \href{https://www.linkedin.com/in/stephanie-klumpe/}{{\faLinkedin}\ {LinkedIn Profile}}\\
+  \school
+
+\end{tabularx}
+}
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      \school{GPA: 3.31}
+      {Master's of Science in Applied Mathematics}{May 2023}
+    \resumeSubheading
+      \school{GPA: 3.72}
+      {Bachelor's of Science in Applied Mathematics with an Economics Minor}{May 2020}
+  \resumeSubHeadingListEnd
+\vspace{-5.0mm}
+
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Personal Projects}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      {The Reduction of Matrix Data for Statistical Analysis of Traffic}
+      {Amazon}
+      {September 2022 - December 2022}
+
+      \resumeItemListStart
+        \item {Generated realistic traffic data for intersections using SUMO traffic simulation software}
+        \item {Developed an autoencoder neural network using Python to compress intersection matrices to a lower 
+        dimension with relatively minimal loss}
+        \item {Compared the compressed data size and data loss to that of the other compression methods chopping and 
+        zipping}
+    \resumeItemListEnd
+    \vspace{-0.5mm}
+    
+    \resumeProject
+      {A Machine Learning Approach to Determining Safety of Road Crossings}
+      {Amazon}
+      {May 2022 - August 2022}
+
+      \resumeItemListStart
+        \item {Developed a machine learning model using Python that takes in various features of roads and returns a 
+        safety ranking of the road in question}
+        \item {Developed three models: a random forest, least squares linear regression, and Tikhonov regularization}
+        \item {Trained the models using multiple peoples safety rankings of several different roads}
+        \item {Compared the MSE and $R^2$ values of the three models to find which model was the most accurate relative 
+        to a persons perception of safety}
+        \item {Compared which features each model found to be the most important}
+        \item {Created a heat-map of the Colorado Springs area in Tableau and MATLAB to help visualize the safety of the 
+        roads}
+    \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.0mm}
+
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Skills and Interests}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, MATLAB, LaTeX, C} \\
+     \textbf{Tools}{: Micorsoft Office, CAD, GIMP, GitHub, SUMO, Machine Learning Modles, Neural Networks} \\
+     \textbf{Soft Skills}{: Team Work, Organization, Presentations, Prioritization, Adaptability, Timelyness,
+      Cost/Benefit Analysis, Research, Teaching, Leadership} \\
+     \textbf{Coursework}{: Real Analysis, Numerical Analysis, Scientific Computation, Linear Algebra,
+      Probability, Statistical Theory, Partial Differential Equations, Ring Theory} \\
+     \textbf{Areas of Interest}{: Research and Development, Data Science/Analysis, Machine Learning, Mathematical Medicine} \\
+    }}
+ \end{itemize}
+\vspace{-5.0mm}
+
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graduate Teaching Fellow}{}
+      \school{August 2020 - May 2023}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item { Served as instructor of record for sections of College Algebra}
+    \item { Responsibilities include lecturing, grading, writing exams, responding to student emails in a timely manner, 
+    holding office hours, writing reviews, reaching out to struggling students, and maintaining the mymathlab 
+    online learning environment}
+    \item { Met with other instructors and course coordinators regularly to discuss teaching styles, skills, student 
+    behaviors, ways of making concepts more obtainable, and methods for getting more student involvement}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+    
+    \resumeSubheading
+      {Peer Tutor}{}
+      \school{August 2022 - May 2023}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Facilitate student group study sessions through discussions, activities, and questions}
+    \item {Guide students through areas of material that they have difficulties with}
+    \item {Help students reflect on their study habits and develop new strategies to study more effectively}
+    \item {Regularly meet with other tutors to discuss strategies, marketing to students, and possible improvements 
+    to the overall group study structure}
+    \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+
+
+
+\end{document}
